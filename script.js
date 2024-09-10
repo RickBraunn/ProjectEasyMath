@@ -9,9 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Add an event listener to the button
-    myButton.addEventListener('click', (e) => {
+    //myButton.addEventListener('click', (e) => {
+
+   // });
+
+   document.getElementById('calculo').onsubmit = function(e){
   // Prevent the default form submission behavior
   e.preventDefault();
+  
+ 
 
   // Get the selected value from the select element
   const minusValue = minusSelect.value;
@@ -72,6 +78,5 @@ swal.fire({
     return false;
 
   }
-});
-});
-});
+          });
+        }});
