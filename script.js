@@ -67,9 +67,9 @@ swal.fire({
   didClose: () => {
     
     //location.reload();
-    //return false;
-    //document.getElementById("calculo").reset();
-    window.location.href="./";
+    document.getElementById("calculo").reset();
+    //window.location.href="./";
+    return false;
 
   }
 });
