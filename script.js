@@ -67,7 +67,7 @@ swal.fire({
   didClose: () => {
     
     //location.reload();
-    document.getElementById("calculo").reset();
+    //document.getElementById("calculo").reset();
     //window.location.href="./";
     return false;
 
