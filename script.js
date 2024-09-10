@@ -66,8 +66,9 @@ swal.fire({
   confirmButtonColor: '#3085d6',
   didClose: () => {
     
-    location.reload();
-    return false;
+    //location.reload();
+    //return false;
+    document.getElementById("calculo").reset();
 
   }
 });
