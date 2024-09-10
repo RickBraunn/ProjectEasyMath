@@ -57,6 +57,11 @@ swal.fire({
   icon: 'success',
   confirmButtonText: 'OK',
   confirmButtonColor: '#3085d6',
+  didClose: () => {
+    
+    location.reload();
+
+  }
 });
 });
 });
