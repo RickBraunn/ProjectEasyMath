@@ -68,7 +68,8 @@ swal.fire({
     
     //location.reload();
     //return false;
-    document.getElementById("calculo").reset();
+    //document.getElementById("calculo").reset();
+    window.location.href="./";
 
   }
 });
