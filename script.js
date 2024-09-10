@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add the year, month, and day values to get the total months
   const penaInMonths = yearValue * 12 + monthValue + dayInMonths;
 
+  if (!penaInMonths || penaInMonths <= '0') {
+    alert('Selecione uma opção válida para a Pena!');
+    return; // Exit the function early
+  }
+
   // Store the values in variables
   let resultado;
   let parcela;
