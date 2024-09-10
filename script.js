@@ -64,7 +64,7 @@ swal.fire({
   confirmButtonColor: '#3085d6',
   didClose: () => {
     
-    location.reload();
+    windows.location.href="./index.html";
     return false;
 
   }
