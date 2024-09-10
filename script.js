@@ -60,6 +60,7 @@ swal.fire({
   didClose: () => {
     
     location.reload();
+    return false;
 
   }
 });
