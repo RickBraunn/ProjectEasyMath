@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    document.getElementById('calculo').onsubmit = function(e){
   // Prevent the default form submission behavior
-  e.preventDefault();
+  
   
  
 
@@ -79,4 +79,9 @@ swal.fire({
 
   }
           });
-        }});
+        
+    e.preventDefault();
+    return false;
+        }
+      
+      });
