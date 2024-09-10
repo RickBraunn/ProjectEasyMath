@@ -66,8 +66,8 @@ swal.fire({
   confirmButtonColor: '#3085d6',
   didClose: () => {
     
-    //window.location.href="./index.html";
-    //return false;
+    location.reload();
+    return false;
 
   }
 });
