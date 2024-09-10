@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const dayInput = document.getElementById('Day');
     const myButton = document.getElementById('myButton');
   
+
+
     // Add an event listener to the button
     myButton.addEventListener('click', (e) => {
   // Prevent the default form submission behavior
@@ -64,7 +66,7 @@ swal.fire({
   confirmButtonColor: '#3085d6',
   didClose: () => {
     
-    windows.location.href="./index.html";
+    window.location.href="./index.html";
     return false;
 
   }
