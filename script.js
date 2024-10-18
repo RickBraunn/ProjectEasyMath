@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    document.getElementById('calculo').onsubmit = function(e){
   // Prevent the default form submission behavior
-  
+  e.preventDefault();
   
  
 
@@ -64,24 +64,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Display the variables in an alert box
  
-swal.fire({
-  title: `Considerando a redução de ${parcela}`,
-  text: `O total de horas de serviço comunitario é de: ${resultado} horas`,
-  icon: 'success',
-  confirmButtonText: 'OK',
-  confirmButtonColor: '#3085d6',
-  didClose: () => {
-    
-    //location.reload();
-    //document.getElementById("calculo").reset();
-    //window.location.href="./";
-    return false;
-
-  }
-          });
-        
-    e.preventDefault();
-    return false;
-        }
-      
-      });
+// Display the result in the result div
+const resultDiv = document.getElementById('result');
+if (resultado > 0) {
+    resultDiv.innerHTML = `Considerando a redução de ${parcela}, o total de horas de serviço comunitário é de: ${resultado} horas`;
+} else {
+    resultDiv.innerHTML = 'Por favor, selecione uma opção válida para a pena.';
+}}});

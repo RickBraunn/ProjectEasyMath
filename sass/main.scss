@@ -1,0 +1,124 @@
+// styles.scss
+
+// Color Variables
+$background-color: #FFFFFF; // White
+$primary-color: #F7F7F7; // Light Gray
+$secondary-color: #CCCCCC; // Gray
+$text-color: #333333; // Dark Gray
+$accent-color: #000000; // Black
+$border-color: #DDDDDD; // Light Border Gray
+
+// Global Styles
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: $background-color;
+    color: $text-color;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+// Header and Navigation Styles
+nav {
+    background-color: $secondary-color;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    a {
+        color: $accent-color;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            color: $text-color;
+            transform: scale(1.05);
+        }
+    }
+}
+
+// Main Container Styles
+.container {
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: $primary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+
+    h1 {
+        color: $accent-color;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+    }
+}
+
+// Form Styles
+.form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: $text-color;
+    }
+
+    input[type="number"],
+    select {
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        padding: 0.75rem;
+        width: 100%;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+        &:focus {
+            border-color: $accent-color;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            outline: none;
+        }
+    }
+}
+
+// Button Styles
+button {
+    background-color: $accent-color;
+    color: $background-color;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background-color: darken($accent-color, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+// Footer Styles
+.copyright {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: $primary-color;
+    border-radius: 10px;
+    text-align: center;
+
+    a {
+        color: $accent-color;
+        text-decoration: underline;
+    }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
